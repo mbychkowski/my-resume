@@ -1,0 +1,316 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{resume} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{center}
+	\HUGE\textcolor{black}{\MakeUppercase{Michael Bychkowski}} % Full name
+			
+	{\huge Web Developer | Platform Engineer} % Career or current job title
+\end{center}
+
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{1.6pt}} \\
+
+%----------------------------------------------------------------------------------------
+%	SIDE ENTRIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.35\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+%----------------------------------------------------------------------------------------
+%	CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+	\cvsect{Contact}
+	\hrule
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\begin{sidelist}
+		\icon{MapMarker}{10}{Washington, DC}\\
+		\icon{Phone}{10}{+1 972 977 6210}\\
+		\icon{Envelope}{10}{\href{mailto:mbychkowski@gmail.com}{mbychkowski@gmail.com}}\\
+	        \icon{Linkedin}{10}{\href{https://www.linkedin.com/in/michaelbychkowski/}{linkedin.com/in/michaelbychkowski}}\\
+	        \icon{Github}{10}{\href{https://github.com/mbychkowski}{github.com/mbychkowski}}    
+	\end{sidelist}	
+	
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+	\cvsect{Education}
+	\hrule
+	\begin{sidelist}		
+		\sideentry
+			{The Pennsylvania State University}		
+			{Master of Science, Structural Engineering}
+			{August 2016}			
+		\sideentry
+			{Texas A\&M University}
+			{Bachelor of Science, Civil Engineering}
+			{May 2014}
+	\end{sidelist}
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATES
+%----------------------------------------------------------------------------------------
+
+	\cvsect{Certificates}
+	\hrule
+	\begin{sidelist}
+%		\sideentry
+%			{CKAD: Certified Kubernetes Application Developer}		
+%			{The Linux Foundation}
+%			{February 2021}		
+		\sideentry
+			{Deloitte Cloud Native Guild – Apprentice (AWS)}
+			{Deloitte}
+			{February 2021}			
+		\sideentry
+			{Security+}		
+			{CompTIA}
+			{November 2020}					
+		\sideentry
+			{CKA: Certified Kubernetes Administrator}		
+			{The Linux Foundation}
+			{October 2020}			
+		\sideentry
+			{AWS Certified Solutions Architect – Associate}
+			{Amazon Web Services Training and Certification}
+			{July 2019}
+		\sideentry
+			{Coding Boot Camp Professional Certificate}		
+			{The George Washington University}
+			{May 2018}				
+	\end{sidelist}	
+	
+%----------------------------------------------------------------------------------------
+%	MAIN
+%----------------------------------------------------------------------------------------
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.6\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+%----------------------------------------------------------------------------------------
+%	CHARTS
+%----------------------------------------------------------------------------------------
+
+%	\begin{barchart}{5.5}
+%		\baritem{JavaScript}{60}
+%		\baritem{PHP}{100}
+%		\baritem{SASS/LESS}{70}
+%		\baritem{Bootstrap}{70}
+%		\baritem{Git}{40}
+%		\baritem{LaTeX}{60}
+%	\end{barchart}
+%\begin{center}
+%	\bubbles{5/Eclipse, 6/git, 4/Office, 3/Inkscape, 3/Blender}
+%\end{center}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+	\cvsect{Work Experience}
+	\hrule
+	\begin{entrylist}{ECS Federal}
+	\entry
+		{Kubernetes Administrator}
+		{June 2021 -- Present}
+		{{\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
+			\item Automate RabbitMQ deployment into develop, staging, and production clusters with Jenkins pipeline
+			\item Architect/Plan migration away from OpenShift v3 to using lates version of Kubernetes
+		\end{itemize}}		
+		{\addtolength{\leftskip}{3mm}\texttt{OpenShift}\slashsep\texttt{Jenkins}\slashsep\texttt{RabbitMQ}\slashsep\texttt{Azure DevOps}\slashsep\texttt{AWS GovCloud}\par}}
+	\end{entrylist}
+
+	\begin{entrylist}{Deloitte}
+		\entry
+			{MLOps Engineer}
+			{July 2020 -- June 2021}
+			{\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
+			        \item Design, engineer, and implement a platform to accelerate the machine learning lifecycle that bolsters Deloitte’s AI/ML offerings
+			        \item  Engineer and implement transparent and ethical AI pipeline processes for the platform
+				\item Create a model API "buildpack" to serve popular model framework binaries as a REST API that are deployed with serverless containers using Knative
+				\item Integrate platform with Azure Active Directory tenant for SSO for internal employees using OpenId Connect
+				\item Implement GitOps via ArgoCD to manage model workloads and platform specific applications
+			\end{itemize}
+			{\addtolength{\leftskip}{3mm}\texttt{Kubernetes}\slashsep\texttt{Kustomize}\slashsep\texttt{Helm}\slashsep\texttt{Istio}\slashsep\texttt{Kubeflow Pipelines}\slashsep\texttt{Knative}\slashsep\texttt{MinIO}\slashsep\texttt{ArgoCD}\slashsep\texttt{Jupyter Notebooks}\slashsep\texttt{Elasticsearch, FluentD, Kibana}\slashsep\texttt{Amazon ECR, EKS, \& Route 53}\par}}
+			
+		\entry
+			{Lead Developer}
+			{July 2020 -- June 2021}
+			{\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
+				\item Lead small developer team to build a data card catalog service for DoD client to discover available datasets on client's AI/ML cloud platform
+  				\item Design and engineer an AI/ML marketplace for DoD client to discover published models on client's AI/ML cloud platform (ongoing development)
+				\item Mentor junior developers on teams by holding weekly coding blocks to assist in blocked agile sprint tickets
+				\item Secure API and UI routes using Keycloak's SDK based off realm role autherization
+			\end{itemize}
+			{\addtolength{\leftskip}{3mm}\texttt{Node.js}\slashsep\texttt{Express}\slashsep\texttt{JavaScript}\slashsep\texttt{React}\slashsep\texttt{PostgreSQL}\slashsep\texttt{Docker}\slashsep\texttt{Keycloak}\slashsep\texttt{Amazon RDS}\par}}
+				       
+		\entry
+			{DevOps Engineer}
+			{March 2020 -- January 2021}
+			{\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
+				\item Maintain multiple deployments for award-winning Deloitte asset, HealthPrism, that helps mobilizes experts, data, and technology to focus resources to fight against U.S. health epidemics
+				\item Lead tech and architectural discussions for the Certified to Sell process, which allowed Deloitte to take the HealthPrism to market
+				\item Continuously rollout new versions of applications using GitOps and Helm manifests
+				\item Create CI pipelines using Argo workflows with GitHub webhooks to continuously integrate code
+			\end{itemize}				
+			{\addtolength{\leftskip}{3mm}\texttt{Kubernetes}\slashsep\texttt{Istio}\slashsep\texttt{Argo}\slashsep\texttt{ArgoCD}\slashsep\texttt{Helm}\slashsep\texttt{Harbor}\slashsep\texttt{StatusCake}\slashsep\texttt{Keycloak}\slashsep\texttt{GitHub}\slashsep\texttt{GCP GKE, BigQuery, Spanner, \& Cloud Storage}\par}}
+			
+	\end{entrylist}
+
+\end{minipage}			
+	
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE CONT...
+%----------------------------------------------------------------------------------------
+\begin{minipage}[t]{1\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+     	\cvsect{Work Experience Cont...}
+	\hrule
+	\begin{entrylist}{Deloitte}
+		\entry
+			{Full-stack Developer}
+			{March 2020 -- January 2021}
+			{\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
+				\item Develop new features for both React based UI and Python GrahpQL server for ward-winning Deloitte asset, HealthPrism, that helps mobilizes experts, data, and technology to focus resources to fight against U.S. health epidemics
+				\item Improve data pipeline by switching backing database to utilize GCP's data warehouse service BigQuery
+				\item Revamp React to UI for improved 508 compliance and color pallete
+			\end{itemize}
+			{\addtolength{\leftskip}{3mm}\texttt{React}\slashsep\texttt{Redux}\slashsep\texttt{Apollo}\slashsep\texttt{Mapbox}\slashsep\texttt{Material-UI}\slashsep\texttt{Vega \& D3.js}\slashsep\texttt{Python}\slashsep\texttt{Flask}\slashsep\texttt{GraphQL \& Graphene}\slashsep\texttt{GCP BigQuery}\par}}
+				
+		\entry
+			{Front-end Developer}
+			{Aug 2019 -- March 2020}
+			{{\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
+				\item React developer on MissionStax, Deloitte's Enterprise Analytics Mission Systems microservice offering
+ 				\item Integrate various Python backed microservices to the client layer with modular and reusable React components
+			\end{itemize}}
+			{\addtolength{\leftskip}{3mm}\texttt{React}\slashsep\texttt{Material-UI}\slashsep\texttt{Python}\slashsep\texttt{PostgreSQL}\par}}
+			
+		\entry
+			{Front-end Developer \& Data Analyst}
+			{Aug 2018 -- Aug 2019}
+			{{\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
+				\item Develop a web-based dashboard to visually display client's fuel chemistry data using D3.js chart library
+				\item Design new charts using Sketch to help visually display clustering techniques to discover new insights on fuel data
+			\end{itemize}}					
+			{\addtolength{\leftskip}{3mm}\texttt{HTML}\slashsep\texttt{CSS}\slashsep\texttt{JavaScript}\slashsep\texttt{D3.js}\slashsep\texttt{Sketch}\slashsep\texttt{Python}\slashsep\texttt{Flask}\par}}
+
+\end{entrylist}				
+				
+	\begin{entrylist}{Hinman Consulting Engineers}
+	\entry
+		{Physical Security Consultant}
+		{July 2016 -- Aug 2018}
+		{{\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
+			\item Develop and maintain in-house software written in C\# used to determine the proper anti-ram barrier for large scale infrasctucture projects
+			\item Utilize the Unity game engine to prove out a proof of concept to asses risk of an active shooter scenarios
+			\item Perform calculations to determine column and beam sizes based off finite elements methods and core structural dynamics to evaluate blast and hazardous loads
+		\end{itemize}}		
+		{\addtolength{\leftskip}{3mm}\texttt{LS-DYNA}\slashsep\texttt{SAP2000}\slashsep\texttt{Autodesk Revit}\slashsep\texttt{MATLAB}\slashsep\texttt{Unity}\slashsep\texttt{C\#}\par}}
+	\end{entrylist}
+	
+      	\begin{entrylist}{Penn State University}		
+	\entry
+		{Research \& Teaching Assistant}
+		{Aug 2014 -- July 2016}
+		{\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
+			\item Design and carry out physical testing of anti-ram barriers for U.S. Department of State
+			\item Prepare lectures and review sessions to over 100 students both in-person \& online\\
+		\end{itemize}}
+\end{entrylist}		
+		
+	
+%----------------------------------------------------------------------------------------
+%	PERSONAL/SIDE PROJECTS
+%----------------------------------------------------------------------------------------	
+	\cvsect{Skill Development Projects}
+	\hrule
+	\begin{entrylist}{Deloitte}
+		\entry
+			{MLOps on AWS with Kubeflow and Amazon SageMaker}
+			{}
+		{{\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
+			\item Complete capstone project for the Deloitte Cloud Native Guild (apprentice level) using AWS sandbox cloud environment
+			\item Deploy instance of Kubeflow pipelines into an EKS cluster and connect to Amazon SageMaker components
+			\item Continuously train on new dataset upload to Amazon S3 bucket and deploy with Amazon Sagemaker			
+		\end{itemize}}			
+			{\addtolength{\leftskip}{3mm}\texttt{Kubernetes}\slashsep\texttt{Kubeflow Pipelines}\slashsep\texttt{Amazon SageMaker}\slashsep\texttt{Amazon S3 \& EKS}\slashsep\texttt{AWS CodeBuild}\par}}
+	\end{entrylist}
+	\begin{entrylist}{Personal}
+		\entry
+			{Edge Deployment of Machine Learning Workloads}
+			{}
+		{{\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
+			\item Host Kops cluster hosted in AWS
+			\item Deploy applications and machine learning workloads to a K3s edge cluster using Inlets-Pro as a proxy to create a tunnel from Kops cluster to K3s cluster  
+			\item Continously deploy with GitOps via ArgoCD to edge cluster to run off of configured Intel Neural Compute Stick		
+		\end{itemize}}					
+			{\addtolength{\leftskip}{3mm}\texttt{Kubernetes \& Kops}\slashsep\texttt{K3s}\slashsep\texttt{Inlets}\slashsep\texttt{ArgoCD}\slashsep\texttt{Docker}\slashsep\texttt{GCP Compute Engine}\slashsep\texttt{Linux}\slashsep\texttt{Raspberry Pi Model B}\slashsep\texttt{Intel Neural Compute Stick 2}\par}}
+		
+		\entry
+			{Personal Blog \& Website}
+			{}
+		{{\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
+			\item Host a headless CMS blog on Amazon S3 and managed by Ghost
+			\item Build a headless JAMStack with React \& Gatsby
+			\item Host using serverless architecture with Amazon S3 and serve using Amazon CloudFront
+		  	\item Create a CI/CD pipeline with AWS CodePipeline and CodeBuild
+		\end{itemize}}						
+			{\addtolength{\leftskip}{3mm}\texttt{GatsbyJS}\slashsep\texttt{GraphQL}\slashsep\texttt{Ghost Blogging Platform}\slashsep\texttt{Amazon S3, CloudFront, \& Route53 }\slashsep\texttt{AWS Lambda, CodePipeline, \& CodeBuild}\par}}
+
+%		\entry
+%			{Home Lab}
+%			{}
+%		{{\begin{itemize}[noitemsep,topsep=0pt,leftmargin=*]
+%			\item Build a three node K3s cluster on Raspberry Pis backed by a NAS to experiment with new technology and build useful home utilities			
+%			\item Create NFS Client provisioner on K3s cluster to dynamically provision PVC with Kubernetes storage class
+%		\end{itemize}}			
+%			{\addtolength{\leftskip}{3mm}\texttt{Raspberry Pi 4 Model B}\slashsep\texttt{NAS: QNAP TS-251D}\slashsep\texttt{K3s}\slashsep\texttt{NFS Server}\slashsep\texttt{PostgreSQL}\par}}
+							
+	\end{entrylist}		
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
